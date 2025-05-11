@@ -1,0 +1,36 @@
+#presentations {
+    @extend %page-padding;
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 60px;
+        left:0%;
+        height: 7rem;
+        background-color: $theme-dark;
+    }
+    h1.title{
+        color:#fff;
+        margin-bottom: 1em;
+        padding-top: 0em;
+    }
+    ol.presentations-list{
+        // @extend %page-padding;
+        list-style-type: none;
+        li {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            .title {
+                font-weight: bolder;
+                font-style: normal;
+            }
+            .event {
+            }
+            .date {
+                font-style: normal;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

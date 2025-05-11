@@ -1,0 +1,17 @@
+#publications {
+    @extend %page-padding;
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 60px;
+        left:0%;
+        height: 7rem;
+        background-color: $theme-dark;
+    }
+    h1.title{
+        color:#fff;
+        margin-bottom: 1em;
+    }
+}
