@@ -5768,7 +5768,7 @@ ol.bibliography li div.comments {
 
 #portfolio #about-me .img-wrap #icons li i:hover {
     background-color: #fff;
-    color: #60dfff;
+    color: #53bdd8;
     transform: scale(1.05)
 }
 
@@ -5828,7 +5828,7 @@ ol.bibliography li div.comments {
     width: 100%;
     height: calc(100% + 120px);
     top: -60px;
-    background-color: #60dfff
+    background-color: #53bdd8
 }
 
 #portfolio #career {
