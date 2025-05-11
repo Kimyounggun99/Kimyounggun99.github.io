@@ -5729,11 +5729,11 @@ ol.bibliography li div.comments {
 
 #tags .tag-group .items .post-link:hover .meta,
 #tags .tag-group .items .post-link:hover .title {
-    color: #333D51
+    color: #347a8b
 }
 
 #tags .tag-group .items .post-link:hover .item::before {
-    background-color: #333D51
+    background-color: #347a8b
 }
 
 #portfolio #about-me {
@@ -5761,14 +5761,14 @@ ol.bibliography li div.comments {
     width: 35px;
     height: 35px;
     color: #fff;
-    background-color: #333D51;
+    background-color: #347a8b;
     line-height: 35px;
     font-size: 28px
 }
 
 #portfolio #about-me .img-wrap #icons li i:hover {
     background-color: #fff;
-    color: #333D51;
+    color: #347a8b;
     transform: scale(1.05)
 }
 
