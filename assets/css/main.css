@@ -5764,14 +5764,14 @@ ol.bibliography li div.comments {
     width: 35px;
     height: 35px;
     color: #fff;
-    background-color: #369cb6;
+    background-color: #246d80;
     line-height: 35px;
     font-size: 28px
 }
 
 #portfolio #about-me .img-wrap #icons li i:hover {
     background-color: #fff;
-    color: #53bdd8;
+    color: #246d80;
     transform: scale(1.05)
 }
 
@@ -5831,7 +5831,7 @@ ol.bibliography li div.comments {
     width: 100%;
     height: calc(100% + 120px);
     top: -60px;
-    background-color: #369cb6
+    background-color: #246d80
 }
 
 #portfolio #career {
