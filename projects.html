@@ -1,18 +1,8 @@
-
-
-<section id="projects">
-  <div class="container">
-    <h1>Projects</h1>
-    <p>Here are some of the projects I've worked on:</p>
-
-    <div class="project">
-      <h3>Safe-LLaVA</h3>
-      <p>Privacy-preserving VLM dataset for biometric safety.</p>
-    </div>
-
-    <div class="project">
-      <h3>Point Cloud Recognition</h3>
-      <p>Multi-view structural convolution network for domain-invariant classification.</p>
-    </div>
-  </div>
-</section>
+<ul class="navbar-nav">
+  <li class="nav-item text-center">
+    <a class="nav-link {% if page.url == '/' %}active current{% endif %}" href="/">Home</a>
+  </li>
+  <li class="nav-item text-center">
+    <a class="nav-link {% if page.url == '/projects/' %}active current{% endif %}" href="/projects/">Projects</a>
+  </li>
+</ul>
