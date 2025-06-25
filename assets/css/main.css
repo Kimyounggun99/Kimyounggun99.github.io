@@ -6807,12 +6807,12 @@ footer .footer a {
 
 
 
-.dropdown-menu {
-  position: absolute; /* 추가 */
-  z-index: 1050 !important;
-}
-
 .page-title-bar {
   position: relative;
-  z-index: 1;
+  z-index: 0;  /* 낮게 설정해서 dropdown이 위로 올라오게 함 */
+}
+
+.dropdown-menu {
+  z-index: 1051; /* 부트스트랩 modal보다도 위로 */
+  position: absolute;
 }
