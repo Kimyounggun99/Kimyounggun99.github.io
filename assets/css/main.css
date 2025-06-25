@@ -6805,17 +6805,7 @@ footer .footer a {
 
 
 
-.dropdown-menu {
-  position: absolute !important;
-  z-index: 9999 !important;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  width: auto;
-  min-width: 100%;
-}
+
 
 .page-title-bar {
   position: relative;
@@ -6825,4 +6815,26 @@ footer .footer a {
 .navbar {
   position: relative;
   z-index: 10;
+}
+
+.dropdown-menu {
+  display: block; /* or none; controlled by Bootstrap */
+  position: absolute !important;
+  top: 100% !important;
+  left: 0;
+  z-index: 1050 !important;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 100vw; /* 화면 전체 너비 */
+  padding: 20px;
+}
+
+.dropdown-wide .row {
+  flex-wrap: nowrap; /* 줄바꿈 방지 */
+}
+
+.dropdown-wide .col {
+  flex: 0 0 33.3333%; /* 3 column */
+  max-width: 33.3333%;
+  text-align: center;
 }
