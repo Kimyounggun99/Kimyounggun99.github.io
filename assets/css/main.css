@@ -6808,5 +6808,11 @@ footer .footer a {
 
 
 .dropdown-menu {
-  z-index: 1050;  /* Bootstrap modal보다 낮고, 대부분 요소보다 높음 */
+  position: absolute; /* 추가 */
+  z-index: 1050 !important;
+}
+
+.page-title-bar {
+  position: relative;
+  z-index: 1;
 }
