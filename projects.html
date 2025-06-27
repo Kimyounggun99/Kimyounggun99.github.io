@@ -166,20 +166,20 @@
       <!-- Right: Description -->
       <div class="col-md-6 text-start">
         
-         <p><strong>Motivation:</strong> </p>
+         <p><strong>Motivation:</strong> In smart intersections, accurately assessing vehicle-to-vehicle safety is crucial. This requires estimating <em>safety surrogate measures</em> such as relative distance. However, limited CCTV viewpoints—typically front-facing—lack depth information, making it infeasible to compute inter-vehicle distances directly from monocular footage.</p>
       </div>
 
        <!-- Row 2: Methodology (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Methodology:</strong> </p>
+          <p><strong>Methodology:</strong> We calibrate top-down drone views with roadside CCTV footage to construct vehicle bounding boxes in both front and bottom perspectives. By matching vehicles captured in drone views with those in CCTV footage, we develop a cross-view dataset that includes bottom bounding boxes. A model is then trained to estimate bottom bounding boxes from CCTV-only views, enabling accurate spatial localization without relying on drone footage. </p>
         </div>
       </div>
     
       <!-- Row 3: Impact (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Impact:</strong> </p>
+          <p><strong>Impact:</strong>  This work enables real-time vehicle safety monitoring using only existing CCTV infrastructure. By bridging the gap between aerial and roadside perspectives, it allows accurate estimation of surrogate safety measures at intersections, contributing to proactive vehicle conflict detection and urban traffic safety management.</p>
         
         
         </div>
