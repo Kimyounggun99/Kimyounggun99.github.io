@@ -240,13 +240,14 @@
       <!-- Left: Video -->
       <div class="col-md-6">
         <img src="/assets/img/ASCN.png" alt="ASCN Figure" style="width: 100%; height: auto;" />
-      </div>
+      
 
       <!-- Right: Description -->
-      <div class="col-md-6 text-start">
-        
-         <p><strong>Motivation:</strong> LiDAR is one of the crucial sensors for autonomous vehicles (AVs), offering accurate 3D spatial information essential for object recognition and safe navigation. However, the quality of LiDAR point clouds varies significantly with the number of channels (e.g., 32CH, 64CH, 128CH), and high-channel sensors are often too expensive for wide deployment. This creates a challenge, as deep learning models trained on high-resolution data often underperform when applied to lower-resolution inputs. Thus, it is critical to develop recognition models that are robust to LiDAR channel variations. </p>
+        <div class="col-md-6 text-start">
 
+           <p><strong>Motivation:</strong> LiDAR is one of the crucial sensors for autonomous vehicles (AVs), offering accurate 3D spatial information essential for object recognition and safe navigation. However, the quality of LiDAR point clouds varies significantly with the number of channels (e.g., 32CH, 64CH, 128CH), and high-channel sensors are often too expensive for wide deployment. This creates a challenge, as deep learning models trained on high-resolution data often underperform when applied to lower-resolution inputs. Thus, it is critical to develop recognition models that are robust to LiDAR channel variations. </p>
+
+      </div>
       </div>
 
        <!-- Row 2: Methodology (full width) -->
@@ -343,14 +344,14 @@
        <!-- Row 2: Methodology (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Benchmark Statistics:</strong> The VRU-Accident benchmark consists of <strong>1K</strong> real-world dashcam accident videos involving VRUs. It features <strong>6K</strong> multiple-choice visual question answering (VQA) questions covering six categories: weather & lighting, traffic environment, road configuration, accident type, accident cause, and prevention measure. Each question comes with four answer choices, one correct and three counterfactual distractors, resulting in <strong>24K</strong> candidate options, including <strong>3.4K</strong> unique answers to encourage diverse and nuanced reasoning. The benchmark also provides <strong>1K</strong> densely annotated scene-level captions that narrate the spatiotemporal dynamics of accident scenarios.</p>
+          <p><strong>Benchmark Statistics:</strong> The VRU-Accident benchmark consists of <strong>1K</strong> real-world dashcam accident videos involving VRUs. It features <strong>6K</strong> multiple-choice video question answering (VQA) questions covering six categories: weather & lighting, traffic environment, road configuration, accident type, accident cause, and prevention measure. Each question comes with four answer choices, one correct and three counterfactual distractors, resulting in <strong>24K</strong> candidate options, including <strong>3.4K</strong> unique answers to encourage diverse and nuanced reasoning. The benchmark also provides <strong>1K</strong> densely annotated scene-level captions that narrate the spatiotemporal dynamics of accident scenarios.</p>
         </div>
       </div>
     
       <!-- Row 3: Impact (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Impact:</strong> 11VRU-Accident serves as the first large-scale benchmark to systematically evaluate MLLMs' understanding of VRU-related accident scenes through both VQA and dense captioning tasks. By providing diverse and semantically rich annotations grounded in real-world scenarios, the benchmark enables quantitative evaluation of MLLMs' reasoning, grounding, and narrative capabilities in high-risk traffic contexts. It lays the foundation for developing safer and more interpretable AI systems for AVs and transportation safety research. </p>
+          <p><strong>Impact:</strong> VRU-Accident serves as the first large-scale benchmark to systematically evaluate MLLMs' understanding of VRU-related accident scenes through both VQA and dense captioning tasks. By providing diverse and semantically rich annotations grounded in real-world scenarios, the benchmark enables quantitative evaluation of MLLMs' reasoning, grounding, and narrative capabilities in high-risk traffic contexts. It lays the foundation for developing safer and more interpretable AI systems for AVs and transportation safety research. </p>
  
           <div class="links mt-2">
             [<a href="https://github.com/Kimyounggun99/VRU-Accident" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
