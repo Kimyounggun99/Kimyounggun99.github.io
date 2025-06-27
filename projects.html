@@ -377,20 +377,12 @@
         
          <p><strong>Motivation:</strong> Multimodal Large Language Models (MLLMs) have shown impressive capabilities across various domains. However, they pose serious privacy risks due to their tendency to infer or leak biometric information such as race, gender, and age from visual data. Despite existing regulations like GDPR and SPCD, MLLMs often violate privacy constraints, which is particularly problematic in high-stakes applications such as government projects. This issue stems primarily from the leakage of biometric attributes in the training datasets used to build these models. </p>
 
-      </div>
-
-
-      <div class="col-md-6 text-start">
-        
          <p><strong>Methodology:</strong> We developed a novel pipeline to clean biometric information from open-domain image-text datasets used to train MLLMs. This process ensures that explicit biometric attributes are removed while preserving semantic richness. Additionally, we introduce a novel benchmark to evaluate both explicit leakage (where models are directly asked about biometric details) and implicit leakage (where personal information is inferred from open-ended questions). As illustrated in the figure, LLaVA-v1.5 trained on existing datasets reveals both types of leakage, whereas Safe-LLaVA reliably refuses to answer biometric questions while maintaining rich, non-biometric descriptions in open-ended prompts.</p>
 
-      </div>
-
-      <div class="col-md-6 text-start">
-        
          <p><strong>Impact:</strong> Safe-LLaVA offers the first comprehensive solution for training and evaluating privacy-aware MLLMs. It enables researchers and practitioners to develop models that are both biometrically safe and informative, which is critical for real-world deployment in domains requiring strict privacy compliance. By preventing both explicit and implicit biometric inference, Safe-LLaVA represents a key step toward building responsible and ethically aligned multimodal AI systems.</p>
 
       </div>
+
 
       <!-- Row 3: Impact (full width)
       <div class="row mb-3">
