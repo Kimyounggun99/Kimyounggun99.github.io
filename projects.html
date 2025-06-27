@@ -244,8 +244,47 @@
       <!-- Right: Description -->
       <div class="col-md-6 text-start">
         
-         <p><strong>Motivation:</strong> </p>
+         <p><strong>Motivation:</strong> Autonomous Vehicles (AVs) rely heavily on accurate environmental perception to ensure safety and navigation. Among the sensors, LiDAR stands out for its ability to provide high-precision 3D spatial information. However, the quality and density of the resulting point cloud vary significantly depending on the number of LiDAR channels (e.g., 16CH, 32CH, 64CH, 128CH). While high-channel LiDAR sensors offer superior resolution, their high cost makes them impractical for large-scale deployment in real-world AV systems. This leads to a critical issue, deep learning models trained on high-resolution data, often degrade in performance when applied to lower-resolution point clouds. Therefore, developing a recognition model that is robust to variations in LiDAR channels and domains is essential for scalable and cost-effective deployment of AV technologies. </p>
 
+      </div>
+
+       <!-- Row 2: Methodology (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Methodology:</strong> We developed an AI model, named 3D-ASCN, that recognizes objects using 3D point cloud data from LiDAR sensors. To address the challenges caused by variations in LiDAR sensor configurations, our model is designed to maintain reliable performance even when the quality or resolution of LiDAR data changes. Specifically, we introduce a distance-based kernel and a direction-based kernel that learn the structural feature representations of objects from point clouds. These kernels enable the model to focus on the intrinsic geometry of objects rather than the density of the point cloud itself, allowing for robust classification and object detection across different LiDAR resolutions.</p>
+        </div>
+      </div>
+    
+      <!-- Row 3: Impact (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong> The proposed 3D-ASCN can contribute to the real-world deployment of AVs by enabling reliable object recognition regardless of the LiDAR sensor used. By overcoming performance degradation caused by LiDAR channel shifts, our approach reduces hardware dependency and cost, allowing AV systems to be both scalable and economically feasible. </p>
+        
+          <div class="links mt-2">
+            [<a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Kim_3D_Adaptive_Structural_Convolution_Network_for_Domain-Invariant_Point_Cloud_Recognition_ACCV_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <h3 class="bibliography">[2] Multi-view Structural Convolution Network for Domain-Invariant Point Cloud Recognition of Autonomous Vehicles</h3>
+    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span> and Soomok Lee*</p>
+    <p><em>Arxiv preprint </em></p>
+    <div class="row align-items-start">
+      
+      <!-- Left: Video -->
+      <div class="col-md-6">
+        <img src="/assets/img/ASCN.png" alt="ASCN Figure" style="width: 100%; height: auto;" />
+      </div>
+
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> </p>
+        <p><strong>Motivation:</strong> </p>
+        <p><strong>Motivation:</strong> </p>
       </div>
 
        <!-- Row 2: Methodology (full width) -->
@@ -257,15 +296,13 @@
     
       <!-- Row 3: Impact (full width) -->
       <div class="row mb-3">
-        <div class="col">
-          <p><strong>Impact:</strong> </p>
-        
           <div class="links mt-2">
-            [<a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Kim_3D_Adaptive_Structural_Convolution_Network_for_Domain-Invariant_Point_Cloud_Recognition_ACCV_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+            [<a href="https://arxiv.org/abs/2501.16289" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
           </div>
-        </div>
       </div>
     </div>
+
+
 
   </div>
 </section>
