@@ -335,21 +335,21 @@
       <!-- Right: Description -->
       <div class="col-md-6 text-start">
         
-         <p><strong>Motivation:</strong> </p>
+         <p><strong>Motivation:</strong> Vulnerable Road Users (VRUs), such as pedestrians and cyclists, are disproportionately affected in traffic accidents, accounting for a significant share of fatalities. Understanding the causes, contexts, and preventability of such accidents is crucial for improving road safety. Multimodal Large Language Models (MLLMs) have emerged as powerful tools for scene understanding and could support applications like accident report summarization and autonomous vehicle (AV) decision-making. However, their real-world utility remains limited due to a lack of high-quality, safety-focused benchmarks that test fine-grained reasoning and description capabilities in accident scenarios—especially those involving VRUs. </p>
 
       </div>
 
        <!-- Row 2: Methodology (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Methodology:</strong> </p>
+          <p><strong>Benchmark Statistics:</strong> The VRU-Accident benchmark consists of 1K real-world dashcam accident videos involving Vulnerable Road Users (VRUs). It features 6K multiple-choice visual question answering (VQA) questions covering six categories: weather & lighting, traffic environment, road configuration, accident type, accident cause, and prevention measure. Each question comes with four answer choices—one correct and three counterfactual distractors—resulting in 24K candidate options, including 3.4K unique answer texts to encourage diverse and nuanced reasoning. Additionally, the benchmark provides 1K densely annotated scene-level captions that narrate the spatiotemporal dynamics of each accident scenario.</p>
         </div>
       </div>
     
       <!-- Row 3: Impact (full width) -->
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Impact:</strong>  </p>
+          <p><strong>Impact:</strong> VRU-Accident serves as the first large-scale benchmark to systematically evaluate MLLMs' understanding of VRU-related accident scenes through both VQA and dense captioning tasks. By providing diverse and semantically rich annotations grounded in real-world scenarios, the benchmark enables quantitative evaluation of MLLMs' reasoning, grounding, and narrative capabilities in high-risk traffic contexts. It lays the foundation for developing safer and more interpretable AI systems for AVs, insurance analysis, and transportation safety research. </p>
           <!--
           <div class="links mt-2">
             [<a href="https://ieeexplore.ieee.org/document/11016106" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
@@ -360,32 +360,31 @@
     </div>
 
 
-
+      <!--
     <h3 class="bibliography">[2] CCTV-Drone Calibration for Surrogate Safety Measure of Vehicles at Smart Intersections</h3>
     <p><strong><em>On going project</em></strong>
     <div class="row align-items-start">
       
-      <!-- Drone_CCTV_Video.mp4 -->
       <div class="col-md-6">
         <video width="100%" controls autoplay muted loop playsinline>
           <source src="/assets/videos/Drone_CCTV_Video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-      <!-- Right: Description -->
+  
       <div class="col-md-6 text-start">
         
          <p><strong>Motivation:</strong> In smart intersections, accurately assessing vehicle-to-vehicle safety is crucial. This requires estimating <em>safety surrogate measures</em> such as relative distance. However, limited CCTV viewpoints, typically front-facing, lack depth information, making it infeasible to compute inter-vehicle distances directly from monocular footage.</p>
       </div>
 
-       <!-- Row 2: Methodology (full width) -->
+   
       <div class="row mb-3">
         <div class="col">
           <p><strong>Methodology:</strong> We calibrate top-down drone views with CCTV footage to construct vehicle bounding boxes in both front and bottom perspectives. By calibrating vehicles captured in drone views with those in CCTV footage, we develop a cross-view dataset that includes bottom bounding boxes. A model is then trained to estimate the both bounding boxes from CCTV-only views, enabling accurate spatial localization without relying on drone footage. </p>
         </div>
       </div>
     
-      <!-- Row 3: Impact (full width) -->
+
       <div class="row mb-3">
         <div class="col">
           <p><strong>Impact:</strong>  This work enables real-time vehicle safety monitoring using only existing CCTV infrastructure. By bridging the gap between aerial and CCTV footage, it allows accurate estimation of surrogate safety measures at intersections, contributing to proactive vehicle conflict detection and urban traffic safety management.</p>
@@ -394,7 +393,7 @@
         </div>
       </div>
     </div>
-
+    -->
 
 
 
