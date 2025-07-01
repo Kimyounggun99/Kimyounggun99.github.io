@@ -41,5 +41,5 @@
   border-left: 5px solid black; /* 검정색 삼각형 */
 }
 :target {
-  scroll-margin-top: 160px; /* 상단바 높이만큼 */
+  scroll-margin-top: 300px; /* 상단바 높이만큼 */
 }
