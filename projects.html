@@ -66,27 +66,21 @@
 
 
   <style>
-  /* Navbar 항상 위에 */
-    .navbar {
-    z-index: 1050 !important;
-  }
-
-  /* 드롭다운은 최상단 */
+  /* 드롭다운 메뉴를 가로로 펼치기 */
   .dropdown-menu {
-    position: absolute !important;
-    z-index: 9999 !important;
+    display: flex !important;
+    flex-direction: row;
+    padding: 0.5rem;
+    min-width: auto;
+    position: absolute;
+    z-index: 9999;
   }
-
-  /* 제목 영역은 맨 밑 */
-  .page-title-bar {
-    position: relative;
-    z-index: 1 !important;
+  
+  /* 각 메뉴 아이템 간격 조정 */
+  .dropdown-menu .dropdown-item {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
   }
-
-/* 드롭다운 부모에 마우스를 올리면 표시 */
-.nav-item.dropdown:hover > .dropdown-menu {
-  display: block;
-}
 </style>
 
 
