@@ -40,3 +40,6 @@
   border-bottom: 4px solid transparent;
   border-left: 5px solid black; /* 검정색 삼각형 */
 }
+:target {
+  scroll-margin-top: 80px; /* 상단바 높이만큼 */
+}
