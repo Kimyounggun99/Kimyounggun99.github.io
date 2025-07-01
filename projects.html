@@ -65,52 +65,7 @@
   <!-- End Jekyll SEO tag -->
 
 
-<style>
-/* 드롭다운 메뉴: 기본은 숨김 + 투명 + 아래로 살짝 */
-.dropdown-menu {
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem;
-  min-width: auto;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* 마우스를 올렸을 때 보임 */
-.nav-item.dropdown:hover > .dropdown-menu {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-/* 각 메뉴 아이템 간격 */
-.dropdown-menu .dropdown-item {
-  white-space: nowrap;
-  padding: 0.5rem 1rem;
-}
-
-/* 드롭다운 부모 위치 기준 */
-.nav-item.dropdown {
-  position: relative;
-}
-
-/* 오른쪽 화살표 */
-.nav-link.dropdown-toggle::after {
-  content: "";
-  display: inline-block;
-  margin-left: 0.4em;
-  vertical-align: middle;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 5px solid black; /* 검정색 삼각형 */
-}
-</style>
-
+<link rel="stylesheet" href="/assets/css/item.css">
 
 </head>
 
@@ -141,7 +96,7 @@
             
             <li class="nav-item dropdown"> 
               <a class="nav-link dropdown-toggle" href="#" id="handsOnDropdown" role="button">
-                <span data-hover="Hands-on Experience">Hands-on Experience</span>
+                <span data-hover="Hands-on Experience">1Hands-on Experience</span>
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="handsOnDropdown">
@@ -151,7 +106,7 @@
                 <li><a class="dropdown-item" href="#Robotics">Robotics</a></li>
               </ul>
             </li>
-            
+
           </ul>
         </div>
       </div>
