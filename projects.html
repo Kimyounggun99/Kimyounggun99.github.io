@@ -64,28 +64,6 @@
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Younggun Kim"},"description":"List of held Hands-on Experience","headline":"Hands-on Experience","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/head.png"},"name":"Younggun Kim"},"url":"http://localhost:4000/projects.html"}</script>
   <!-- End Jekyll SEO tag -->
 
-  <style>
-  .navbar {
-    z-index: 1051;
-  }
-
-  .dropdown-menu {
-    position: absolute !important; /* fixed로 하면 화면 최상단에 붙어서 이상해지니 absolute */
-    z-index: 3000;
-  }
-
-  .page-title-bar {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* 부모 stacking context 강제 해제 */
-  .container,
-  .container-fluid {
-    position: static !important;
-    z-index: auto !important;
-  }
-  </style>
 
 </head>
 
@@ -93,6 +71,30 @@
 
 <body>
   <header>
+
+    <style>
+    /* Navbar는 항상 위에 */
+    .navbar {
+      z-index: 1050 !important;
+    }
+
+    /* Dropdown을 화면 가장 위에 고정 */
+    .dropdown-menu {
+      position: fixed !important;
+      top: 60px !important; /* Navbar 아래에 딱 붙게 */
+      left: auto !important;
+      right: auto !important;
+      z-index: 2000 !important;
+      display: none; /* 기본은 안보이게 */
+    }
+
+    /* Dropdown을 열 때 위치 잡아주기 */
+    .nav-item.dropdown.show .dropdown-menu {
+      display: block !important;
+    }
+    </style>
+
+
     <nav class="navbar navbar-expand-md bg-light fixed-top" style="background-color:#ffffff;">
       <div class="container-fluid mt-3">
         <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse"
@@ -148,7 +150,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       ddd
+       fff
     </div>
   </section>
 
