@@ -43,22 +43,6 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
-  <style>
-  .navbar {
-    position: relative;
-    z-index: 1051; /* Bootstrap 모달보다 낮고 드롭다운보다 높음 */
-  }
-  
-  .page-title-bar {
-    position: relative;
-    z-index: 100; /* navbar보다 낮게 */
-  }
-  </style>
-  <style>
-  .container {
-    position: static !important;
-  }
-  </style>
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
   <title>Hands-on Experience | Younggun Kim</title>
@@ -82,69 +66,55 @@
 
 </head>
 
+<style>
+.navbar {
+  z-index: 1051;
+}
+</style>
+
+
 <body>
-  
-
-
-    <section id="header-nav">
-      <header>
-        <nav class="navbar navbar-expand-md bg-light" style="background-color: #ffffff;">
-          <div class="container-fluid mt-3">
-            <!-- <image class="icon" src="/assets/img/icons/rocket_icon.png"></image> -->
-            <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span><i class="fas fa-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse mb-0 pb-3" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-
-                <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
-                  <a class="nav-link" href="/">
-                    <span data-hover="Home">Home</span>
-                  </a>
-                </li>
-
-                <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
-                  <a class="nav-link" href="/publications.html">
-                    <span data-hover="Publications">Publications</span>
-                  </a>
-                </li>
-                
-                <!--
-                <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center ">
-                  <a class="nav-link" href="/projects.html">
-                    <span data-hover="Hands-on Experience">Hands-on Experience</span>
-                  </a>
-                </li>
-
-            
-               -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" 
-                     href="#" 
-                     id="handsOnDropdown" 
-                     role="button" 
-                     data-bs-toggle="dropdown" 
-                     aria-expanded="false">
-                    Hands-on Experience
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="handsOnDropdown" style="z-index: 9999;">
-                    <li><a class="dropdown-item" href="#ITS">Intelligent Transportation System Development</a></li>
-                    <li><a class="dropdown-item" href="#LiDAR">LiDAR-Based Object Recognition for Autonomous Vehicles</a></li>
-                    <li><a class="dropdown-item" href="#MLLM">Multimodal Large Language Models for Visual Understanding and Safety</a></li>
-                    <li><a class="dropdown-item" href="#Robotics">Robotics Experience</a></li>
-                  </ul>
-                </li>
-
+  <header>
+    <nav class="navbar navbar-expand-md bg-light" style="background-color:#ffffff;">
+      <div class="container-fluid mt-3">
+        <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse mb-0 pb-3" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center">
+              <a class="nav-link" href="/">
+                <span data-hover="Home">Home</span>
+              </a>
+            </li>
+            <li class="nav-item btn-nav my-auto mx-auto pe-3 text-center">
+              <a class="nav-link" href="/publications.html">
+                <span data-hover="Publications">Publications</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"
+                 href="#"
+                 id="handsOnDropdown"
+                 role="button"
+                 data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Hands-on Experience
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="handsOnDropdown">
+                <li><a class="dropdown-item" href="#ITS">Intelligent Transportation System Development</a></li>
+                <li><a class="dropdown-item" href="#LiDAR">LiDAR-Based Object Recognition for Autonomous Vehicles</a></li>
+                <li><a class="dropdown-item" href="#MLLM">Multimodal Large Language Models for Visual Understanding and Safety</a></li>
+                <li><a class="dropdown-item" href="#Robotics">Robotics Experience</a></li>
               </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </section>
-  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
 
@@ -160,7 +130,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       iii
+       ddd
     </div>
   </section>
 
