@@ -65,39 +65,47 @@
   <!-- End Jekyll SEO tag -->
 
 
-  <style>
-  /* 드롭다운 메뉴를 가로로 일렬로 표시 */
-  .dropdown-menu {
-    display: none;  /* 기본은 숨김 */
-    flex-direction: row;
-    padding: 0.5rem;
-    min-width: auto;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none; /* 마우스 클릭 방지 */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
+<style>
+/* 드롭다운 메뉴: 기본은 숨김 + 투명 + 아래로 살짝 */
+.dropdown-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  min-width: auto;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-  /* 각 메뉴 아이템 간격 */
-  .dropdown-menu .dropdown-item {
-    white-space: nowrap;
-    padding: 0.5rem 1rem;
-  }
+/* 마우스를 올렸을 때 보임 */
+.nav-item.dropdown:hover > .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
-  /* 드롭다운 메뉴를 아래가 아니라 오른쪽에 뜨도록 조정 */
-  .nav-item.dropdown {
-    position: relative;
-  }
+/* 각 메뉴 아이템 간격 */
+.dropdown-menu .dropdown-item {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+}
 
-/* 마우스 올렸을 때: 나타남 */
-  .nav-item.dropdown:hover > .dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto; /* 클릭 가능 */
-  }
+/* 드롭다운 부모 위치 기준 */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* 오른쪽 화살표 */
+.nav-link.dropdown-toggle::after {
+  content: '\25B6'; /* ▶ 기호 */
+  display: inline-block;
+  margin-left: 0.4em;
+  font-size: 0.7em;
+}
 </style>
 
 
