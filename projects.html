@@ -450,9 +450,13 @@
 
       <div class="row mb-3">
         <div class="col">
-          <p><strong>Methodology:</strong> We designed a body-shaped ergonomic cradle that actively follows the user’s head movements to keep the device consistently positioned in front of the face. We adopted a real-time face detection system to capture head pose and movement directions, and implemented motor control algorithms to dynamically adjust the cradle’s orientation based on the detected motion. For deployment, we calculated the maximum load and structural requirements caused by body movements, and selected appropriate materials and actuators to ensure reliable performance.</p>
+          <p><strong>Overview:</strong> This project was carried out as part of my undergraduate capstone experience, with the goal of integrating the fundamental principles of mechanical engineering, including kinematics, dynamics, and motor design, into a comprehensive robotic system. I was particularly inspired by the Omega Gripper, published in IEEE/ASME Transactions on Mechatronics, which was specifically designed to grasp challenging objects such as thin cards. Recognizing this as an excellent example of how core engineering knowledge could be combined into a solution, I adopted the Omega Gripper as the foundation of my work. To deepen my understanding, I visited the POSTECH March Lab and consulted directly with the first author of the original paper, which helped resolve technical questions and further motivated me to pursue this project. </p>
 
-          <p><strong>Impact:</strong> This device enables hands-free operation and continuous monitoring, enhancing the usability of devices for patients, the elderly, or users with mobility constraints. We also demonstrates the practical integration of real-time vision-based tracking with adaptive mechanical systems, contributing to the development of smart IoT assistive devices. </p>
+          <p><strong>Gripper Kinematic Design:</strong> The gripper mechanism features an underactuated structure implemented using a parallel four-bar mechanism. I derived and analyzed both the closed-loop forward and inverse kinematic equations to model the motion mathematically and ensure precise control over the gripper’s configuration during operation. </p>
+
+          <p><strong>Kinematic Simulation:</strong> Using MATLAB, I simulated the kinematics of the mechanism to optimize key parameters such as link lengths and ranges of motion, ensuring that the gripper could reliably adapt to a variety of object shapes and sizes. </p>
+          <p><strong>Dynamic Simulation and Prototyping:</strong> Dynamic simulations were conducted to estimate the loads applied during grasping and to select appropriate material properties for the gripper body. Based on these analyses, I designed the gripper structure and fabricated the components via 3D printing. I also selected motors considering factors such as required grasping force and system responsiveness. </p>
+          <p><strong>Demonstration and Real-time Tracking:</strong> For demonstration, I integrated an encoder at the lower part of the gripper and an IMU sensor at the center. The gripper was operated based on the inverse kinematic equations to achieve adaptive grasping of objects. Real-time tracking and visualization of the gripper’s state were performed using forward kinematics, allowing continuous monitoring of its configuration during operation. </p>
         </div>
       </div>
 
@@ -479,26 +483,13 @@
         </video>
       </div>
 
-      <!-- Right: Description 
-      <div class="col-md-6 text-start">
-        
-        <ul style="padding-left: 1.2em; margin-top: 0.4rem;">
-          <li style="margin-bottom: 0.4rem;">
-            We developed MSCN, an improved version of the previously proposed 3D-ASCN model, which robustly recognizes objects from point clouds under both LiDAR channel variations and domain shifts between simulation and real-world environments.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            While 3D-ASCN focuses on local structural features centered around each point, MSCN extends this by capturing both <span style="text-decoration: underline;">local and global structural features</span>, leading to improved recognition performance and robustness to domain shifts.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            To evaluate the model’s recognition ability under simulation-to-real-world (Sim-to-Real) domain shifts, we developed a synthetic point cloud dataset. This dataset enabled rigorous testing of sim-to-real generalization, validating MSCN’s robustness in diverse deployment scenarios.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            <strong>Impact:</strong> MSCN enables cost-effective deployment of AV systems by maintaining strong recognition performance across both varying LiDAR sensor configurations (e.g., low-cost vs. high-resolution sensors) and domain shifts between synthetic and real-world data, addressing key challenges in both sensor variability and data availability.
-          </li>
-        </ul>
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Methodology:</strong> We designed a body-shaped ergonomic cradle that actively follows the user’s head movements to keep the device consistently positioned in front of the face. We adopted a real-time face detection system to capture head pose and movement directions, and implemented motor control algorithms to dynamically adjust the cradle’s orientation based on the detected motion. For deployment, we calculated the maximum load and structural requirements caused by body movements, and selected appropriate materials and actuators to ensure reliable performance.</p>
 
+          <p><strong>Impact:</strong> This device enables hands-free operation and continuous monitoring, enhancing the usability of devices for patients, the elderly, or users with mobility constraints. We also demonstrates the practical integration of real-time vision-based tracking with adaptive mechanical systems, contributing to the development of smart IoT assistive devices. </p>
+        </div>
       </div>
-      -->
 
 
 
