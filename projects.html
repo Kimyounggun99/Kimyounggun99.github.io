@@ -78,19 +78,24 @@
       z-index: 1050 !important;
     }
 
-    /* Dropdown을 화면 가장 위에 고정 */
+    /* Dropdown은 navbar 기준으로 absolute 위치 */
     .dropdown-menu {
-      position: fixed !important;
-      top: 60px !important; /* Navbar 아래에 딱 붙게 */
-      left: auto !important;
-      right: auto !important;
-      z-index: 2000 !important;
-      display: none; /* 기본은 안보이게 */
+      position: absolute !important;
+      z-index: 3000 !important;
     }
 
-    /* Dropdown을 열 때 위치 잡아주기 */
-    .nav-item.dropdown.show .dropdown-menu {
-      display: block !important;
+    /* page-title-bar는 밑에 */
+    .page-title-bar {
+      position: relative;
+      z-index: 1 !important;
+    }
+
+    /* header와 container에서 stacking context 제거 */
+    header,
+    .container,
+    .container-fluid {
+      position: static !important;
+      z-index: auto !important;
     }
     </style>
 
@@ -150,7 +155,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       fff
+       eee
     </div>
   </section>
 
