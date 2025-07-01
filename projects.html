@@ -70,17 +70,17 @@
   .navbar {
     z-index: 1050 !important;
   }
-
-  /* Dropdown 메뉴는 Navbar 기준으로 absolute */
+  
+  /* 드롭다운은 Navbar보다 위에 */
   .dropdown-menu {
-    z-index: 3000 !important;
-    /* position: absolute;  <= Bootstrap 기본이라 필요 없으면 생략 */
+    position: absolute !important;
+    z-index: 1100 !important;
   }
-
-  /* page-title-bar는 가장 밑에 */
+  
+  /* page-title-bar는 맨 아래 */
   .page-title-bar {
-    position: relative;
-    z-index: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
   </style>
 </head>
