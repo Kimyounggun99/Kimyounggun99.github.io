@@ -66,20 +66,36 @@
 
 
   <style>
-  /* 드롭다운 메뉴를 가로로 펼치기 */
+  /* 드롭다운 메뉴를 가로로 일렬로 표시 */
   .dropdown-menu {
     display: flex !important;
     flex-direction: row;
     padding: 0.5rem;
     min-width: auto;
     position: absolute;
-    z-index: 9999;
+    top: 100%;   /* 메뉴를 부모 밑에 두고 */
+    left: 0;     /* 왼쪽부터 시작 */
   }
 
-  /* 각 메뉴 아이템 간격 조정 */
+  /* 드롭다운 부모에 마우스를 올리면 표시 */
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: flex !important;
+  }
+
+  /* 각 메뉴 아이템 간격 */
   .dropdown-menu .dropdown-item {
     white-space: nowrap;
     padding: 0.5rem 1rem;
+  }
+
+  /* 드롭다운 메뉴를 아래가 아니라 오른쪽에 뜨도록 조정 */
+  .nav-item.dropdown {
+    position: relative;
+  }
+
+  .nav-item.dropdown:hover > .dropdown-menu {
+    top: 0;       /* 부모의 위에서 시작 */
+    left: 100%;   /* 부모의 오른쪽에 붙임 */
   }
 </style>
 
@@ -143,7 +159,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       jjj
+       kkk
     </div>
   </section>
 
