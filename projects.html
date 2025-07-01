@@ -68,12 +68,22 @@
   .navbar {
     z-index: 1051;
   }
+
   .dropdown-menu {
+    position: absolute !important; /* fixed로 하면 화면 최상단에 붙어서 이상해지니 absolute */
     z-index: 3000;
   }
+
   .page-title-bar {
     position: relative;
-    z-index: 1; /* 드롭다운보다 아래로 */
+    z-index: 1;
+  }
+
+  /* 부모 stacking context 강제 해제 */
+  .container,
+  .container-fluid {
+    position: static !important;
+    z-index: auto !important;
   }
   </style>
 
@@ -138,7 +148,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       ccc
+       ddd
     </div>
   </section>
 
