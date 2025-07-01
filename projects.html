@@ -71,27 +71,18 @@
     z-index: 1050 !important;
   }
 
-  /* Dropdown은 navbar 기준으로 absolute */
+  /* Dropdown 메뉴는 Navbar 기준으로 absolute */
   .dropdown-menu {
-    position: absolute !important;
     z-index: 3000 !important;
+    /* position: absolute;  <= Bootstrap 기본이라 필요 없으면 생략 */
   }
 
-  /* page-title-bar는 가장 밑 */
+  /* page-title-bar는 가장 밑에 */
   .page-title-bar {
     position: relative;
-    z-index: 1 !important;
-  }
-
-  /* header, container의 stacking context 제거 */
-  header,
-  .container,
-  .container-fluid {
-    position: static !important;
-    z-index: auto !important;
+    z-index: 0 !important;
   }
   </style>
-
 </head>
 
 
@@ -156,7 +147,7 @@
   <section id="ITS" class="recentpubs" style="background-color: #F4F3EA;">
     <div class="recentpubs-wrap">
       <!-- ITS 내용 -->
-       aaa
+       bbb
     </div>
   </section>
 
