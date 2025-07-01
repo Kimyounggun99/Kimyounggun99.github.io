@@ -68,15 +68,14 @@
   <style>
   /* 드롭다운 메뉴를 가로로 일렬로 표시 */
   .dropdown-menu {
-    display: flex !important;
+    display: none;  /* 기본은 숨김 */
     flex-direction: row;
     padding: 0.5rem;
     min-width: auto;
     position: absolute;
-    top: 100%;   /* 메뉴를 부모 밑에 두고 */
-    left: 0;     /* 왼쪽부터 시작 */
+    top: 0;
+    left: 100%;
   }
-
   /* 드롭다운 부모에 마우스를 올리면 표시 */
   .nav-item.dropdown:hover > .dropdown-menu {
     display: flex !important;
@@ -160,7 +159,10 @@
 
 
 
-
+<section id="AV" class="recentpubs" style="background-color: #F4F3EA;">
+  <div class="recentpubs-wrap">
+  </div>
+</section>
 
 <section id="recentpubs" class="recentpubs" style="background-color: #F4F3EA;">
   <div class="recentpubs-wrap">
@@ -283,6 +285,7 @@
   <div class="recentpubs-wrap">
   </div>
 </section>
+
 <section id="recentpubs" class="recentpubs" >
   <div class="recentpubs-wrap">
     <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🚘 LiDAR-Based Object Recognition for Autonomous Vehicles </p>
