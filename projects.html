@@ -347,7 +347,42 @@
 <section id="recentpubs" class="recentpubs" style="background-color: #F4F3EA;">
   <div class="recentpubs-wrap">
     <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🧠 Multimodal Large Language Models for Visual Understanding and Safety</p>
-    <h3 class="bibliography">[1] VRU-Accident: A Vision-Language Benchmark for Video Question Answering and Dense Captioning for Accident Scene Understanding</h3>
+
+
+    <h3 class="bibliography">[1] AVA-VLM: Adaptive Visual Attention-Vision Language Model for In-the-Wild Construction Site Monitoring</h3>
+    <span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>,&nbsp;Taeheon Kim,&nbsp;Youngseo Kim,&nbsp;and&nbsp;Seunghee Park*
+    <p><em> has been submitted to Automation in Construction. [Impact Factor: 12.6, JCR Quartiles: Q1] </em></p>
+    <div class="row align-items-start">
+      
+      <!-- Left: Video -->
+      <div class="col-md-6">
+        <img src="/assets/img/AVA_VLM.png" alt="AVA-VLM Figure" style="width: 100%; height: auto;" />
+      </div>
+
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> Existing construction-site Vision-Language Models (VLMs) commonly rely on direct question-answering from a single global image. However, this paradigm remains limited for in-the-wild construction-site monitoring. First, the operational range is restricted because small or distant workers, PPE items, and hazardous objects are often difficult to recognize from wide-view images. Second, model reliability can degrade when input images are downsampled due to bandwidth, latency, or edge-device constraints. Third, processing full-resolution images with dense visual tokens leads to inefficient inference, even when only a small region is relevant to the query. </p>
+
+         <p><strong>Methodology:</strong> To address these limitations, we developed AVA-VLM, an Adaptive Visual Attention-Vision Language Model inspired by the human visual attention mechanism. Similar to how a human inspector first scans the overall scene and then zooms in on important but hard-to-see areas, AVA-VLM first reasons over a low-resolution global image to understand the scene context. When the relevant evidence is sufficiently visible, the model directly answers from the global view. When detailed inspection is needed, it adaptively requests a high-resolution crop of the query-relevant region and incorporates the cropped visual evidence into a multi-turn Chain-of-Thought reasoning process.</p>
+
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong> AVA-VLM provides three key benefits for practical construction-site monitoring. First, it extends the operational range of construction-site VLMs by enabling fine-grained reasoning over small or distant objects. Second, it improves reliability under reduced-resolution inputs by combining low-resolution global reasoning with selective high-resolution local inspection. Third, it improves inference efficiency by reducing unnecessary visual-token processing and allocating high-resolution processing only to regions that are relevant to the query.</p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+          <div class="links mt-2">
+            [<a href="https://arxiv.org/abs/2607.05859" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+          </div>
+      </div>
+    </div>
+
+
+    <h3 class="bibliography">[2] VRU-Accident: A Vision-Language Benchmark for Video Question Answering and Dense Captioning for Accident Scene Understanding</h3>
     <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>, Ahmed Abdelrahman*, and Mohamed Abdel-Aty</p>
     <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>IEEE/CVF International Conference on Computer Vision Workshop (ICCVW), 2025. [Oral, Best Student Paper Award]</em> </p>
     <div class="row align-items-start">
@@ -388,7 +423,7 @@
 
 
   
-    <h3 class="bibliography">[2] Safe-LLaVA: A Privacy-Preserving Vision-Language Dataset and Benchmark for Biometric Safety</h3>
+    <h3 class="bibliography">[3] Safe-LLaVA: A Privacy-Preserving Vision-Language Dataset and Benchmark for Biometric Safety</h3>
     <span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>,&nbsp;Swetha Sirnam,&nbsp;Fazil Kagdi,&nbsp;and&nbsp;Mubarak Shah
     <p><em> 🎉 IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings (CVPR Findings), 2026. </em></p>
     <div class="row align-items-start">
@@ -487,7 +522,7 @@
       </div>
 
 
-
+    <!-- 
     <h3 class="bibliography">[3] Intelligent cradle for a device </h3>
     <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>, Minjoung Sim, Hojun Lee, Wonjun Choi, and Hanbin Choi</p>
     <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Granted Patent (Patent No. 10-2506732, KR) </em></p>
@@ -519,7 +554,7 @@
       
     </div>
 
-
+     -->
 
 
 
