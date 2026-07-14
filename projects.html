@@ -99,9 +99,9 @@
                   </a>
                 
                   <ul class="dropdown-menu" aria-labelledby="handsOnDropdown">
+                    <li><a class="dropdown-item" href="#MLLM">MLLM</a></li>
                     <li><a class="dropdown-item" href="#CV">Computer Vision</a></li>
                     <li><a class="dropdown-item" href="#DL">Deep Learning</a></li>
-                    <li><a class="dropdown-item" href="#MLLM">MLLM</a></li>
                     <li><a class="dropdown-item" href="#Robotics">Robotics</a></li>
                   </ul>
             </li>
@@ -121,220 +121,6 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-<section id="CV" class="recentpubs" style="background-color: #F4F3EA;">
-  <div class="recentpubs-wrap">
-  </div>
-</section>
-
-<section id="recentpubs" class="recentpubs" style="background-color: #F4F3EA;">
-  <div class="recentpubs-wrap">
-    <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🚦 Computer Vision for ITS</p>
-    <h3 class="bibliography">[1] Pedestrian Crossing Direction Prediction at Intersections for Pedestrian Safety</h3>
-    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim*</em></strong></span>, Mohamed Abdel-Aty, Keechoo Choi, Zubayer Islam, Dongdong Wang, and Shaoyan Zhai</p>
-    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Accepted at IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS), 2025. [Impact Factor: 5.3, JCR Quartiles: Q1]</em></p>
-
-    <div class="row align-items-start">
-      
-      <!-- Left: Video -->
-      <div class="col-md-6">
-        <video width="100%" controls autoplay muted loop playsinline>
-          <source src="/assets/videos/OJ_ITS_Video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Right: Description -->
-      <div class="col-md-6 text-start">
-        
-         <p><strong>Motivation:</strong> With the rise of smart intersections, accurately predicting a pedestrian’s crossing direction at the intersection level is essential for enhancing pedestrian safety and optimizing traffic signal control. However, this task is challenging due to the diverse configurations of real-world intersections, each with different crosswalk orientations, geographic layouts, and CCTV placements and angles.</p>
-
-      </div>
-
-       <!-- Row 2: Methodology (full width) -->
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Methodology:</strong> To address this, we propose a geometric-invariant space embedding method. As illustrated in the video, our approach enables pedestrians captured at different intersections, with varying CCTV angles and crosswalk orientations, to be embedded into a unified spatial representation. This standardization allows robust learning of crossing behaviors. Furthermore, we adopt a Transformer-based encoder, achieving accuracy of 94.10% and an F1-score of 92.35%.</p>
-        </div>
-      </div>
-    
-      <!-- Row 3: Impact (full width) -->
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Impact:</strong> The proposed method demonstrates strong potential for real-world deployment. Its robustness to intersection variability makes it suitable for integration into city-wide intelligent traffic management systems to proactively ensure pedestrian safety at signalized intersections.</p>
-        
-          <div class="links mt-2">
-            [<a href="https://ieeexplore.ieee.org/document/11016106" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <h3 class="bibliography">[2] CCTV-Drone Calibration for Surrogate Safety Measure of Vehicles at Smart Intersections</h3>
-    <!--<p><strong><em>On going project</em></strong>-->
-    <div class="row align-items-start">
-      
-      <!-- Drone_CCTV_Video.mp4 -->
-      <div class="col-md-6">
-        <video width="100%" controls autoplay muted loop playsinline>
-          <source src="/assets/videos/Drone_CCTV_Video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Right: Description -->
-      <div class="col-md-6 text-start">
-        
-         <p><strong>Motivation:</strong> In smart intersections, accurately assessing vehicle-to-vehicle safety is crucial. This requires estimating <em>safety surrogate measures</em> such as relative distance. However, limited CCTV viewpoints, typically front-facing, lack depth information, making it infeasible to compute inter-vehicle distances directly from monocular footage.</p>
-      </div>
-
-       <!-- Row 2: Methodology (full width) -->
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Methodology:</strong> We calibrate top-down drone views with CCTV footage to construct vehicle bounding boxes in both front and bottom perspectives. By calibrating vehicles captured in drone views with those in CCTV footage, we develop a cross-view dataset that includes bottom bounding boxes. A model is then trained to estimate the both bounding boxes from CCTV-only views, enabling accurate spatial localization without relying on drone footage. </p>
-        </div>
-      </div>
-    
-      <!-- Row 3: Impact (full width) -->
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Impact:</strong>  This work enables real-time vehicle safety monitoring using only existing CCTV infrastructure. By bridging the gap between aerial and CCTV footage, it allows accurate estimation of surrogate safety measures at intersections, contributing to proactive vehicle conflict detection and urban traffic safety management.</p>
-        
-        
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <h3 class="bibliography">[3] Joint Trajectory Prediction of Vehicles and Pedestrians for Safety at Intersections</h3>
-    <p><strong><em> Project under the National Science Foundation(NSF) and Center for Smart Streetscapes (CS3)</em></strong>
-    <div class="row align-items-start">
-      
-      <!-- Drone_CCTV_Video.mp4 -->
-      <div class="col-md-6">
-        <video width="100%" controls autoplay muted loop playsinline>
-          <source src="/assets/videos/Trajectory_Video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Right: Description -->
-      <div class="col-md-6 text-start">
-        
-         <p><strong>Motivation:</strong> Vehicles and pedestrians continuously influence each other's movement, particularly through behaviors such as yielding or hesitation. Accurately predicting the future trajectories of both agents is essential to improve road users' safety at intersections. A joint understanding enables proactive conflict detection and enhances traffic safety. </p>
-
-         <p><strong>Methodology:</strong> We leverage a Graph Convolutional Network (GCN)-based framework to jointly encode the historical trajectories of vehicles and pedestrians into a shared latent feature space. The model captures mutual interactions between the two agent types and learns to predict their future trajectories concurrently.</p>
-      </div>
-
-      <!-- Row 3: Impact (full width) -->
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Impact:</strong> Our approach facilitates accurate multi-agent trajectory forecasting at intersections using observed movement patterns. By modeling pedestrian–vehicle interactions, it enhances the reliability of safety assessment and supports the development of smarter traffic control systems that account for both pedestrians and vehicles.</p>
-        
-        
-        </div>
-      </div>
-    </div>
-
-
-
-  </div>
-</section>
-
-
-
-<section id="DL" class="recentpubs">
-  <div class="recentpubs-wrap">
-  </div>
-</section>
-
-<section id="recentpubs" class="recentpubs" >
-  <div class="recentpubs-wrap">
-    <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🚘 Novel Deep Learning Architectures for 3D LiDAR Recognition </p>
-    <h3 class="bibliography">[1] 3D Adaptive Structural Convolution Network for Domain-Invariant Point Cloud Recognition</h3>
-    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span> and Soomok Lee*</p>
-    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Accepted at Asian Conference on Computer Vision (ACCV), 2024. [BK21(Brain Korea) Distinguished Conference Paper List]</em></p>
-    
-    <div class="row align-items-start">
-
-      <div class="col-md-6">
-        <img src="/assets/img/ASCN.png" alt="ASCN Figure" style="width: 100%; height: auto;" />
-      </div>
-
-      <div class="col-md-6 text-start">
-        
-         <p><strong>Motivation:</strong> LiDAR is one of the crucial sensors for autonomous vehicles (AVs), offering accurate 3D spatial information essential for object recognition and safe navigation. However, the quality of LiDAR point clouds varies significantly with the number of channels (e.g., 32CH, 64CH, 128CH), and high-channel sensors are often too expensive for wide deployment. This creates a challenge, as deep learning models trained on high-resolution data often underperform when applied to lower-resolution inputs. Thus, it is critical to develop recognition models that are robust to LiDAR channel variations. </p>
-
-      </div>
-
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Methodology:</strong> We developed 3D-ASCN that recognizes objects using 3D point cloud data from LiDAR sensors. To address the challenges caused by variations in LiDAR sensor configurations, our model is designed to maintain reliable performance even when the quality or resolution of LiDAR data changes. Specifically, we introduce a distance-based kernel and a direction-based kernel that learn the structural feature representations of objects from point clouds. These kernels enable the model to focus on the intrinsic geometry of objects rather than the density of the point cloud itself, allowing for robust classification and object detection across different LiDAR resolutions.</p>
-        </div>
-      </div>
-    
-      <div class="row mb-3">
-        <div class="col">
-          <p><strong>Impact:</strong> The proposed 3D-ASCN can contribute to the real-world deployment of AVs by enabling reliable object recognition regardless of the LiDAR sensor used. By overcoming performance degradation caused by LiDAR channel shifts, our approach reduces hardware dependency and cost, allowing AV systems to be both scalable and economically feasible. </p>
-        
-          <div class="links mt-2">
-            [<a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Kim_3D_Adaptive_Structural_Convolution_Network_for_Domain-Invariant_Point_Cloud_Recognition_ACCV_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <h3 class="bibliography">[2] Multi-view Structural Convolution Network for Domain-Invariant Point Cloud Recognition of Autonomous Vehicles</h3>
-    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>, Mohamed Abdel-Aty, Beomsik Cho, Seonghoon Ryoo, and Soomok Lee*</p>
-    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Conditionally accepted at IEEE Transactions on Intelligent Vehicles (T-IV). [Impact Factor: 14.3, JCR Quartiles: Q1]</em></p>
-    <div class="row align-items-start">
-      
-      <!-- Left: Video -->
-      <div class="col-md-6">
-        <img src="/assets/img/MSCN.png" alt="MSCN Figure" style="width: 100%; height: auto;" />
-      </div>
-
-      <!-- Right: Description -->
-      <div class="col-md-6 text-start">
-        
-        <ul style="padding-left: 1.2em; margin-top: 0.4rem;">
-          <li style="margin-bottom: 0.4rem;">
-            We developed MSCN, an improved version of the previously proposed 3D-ASCN model, which robustly recognizes objects from point clouds under both LiDAR channel variations and domain shifts between simulation and real-world environments.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            While 3D-ASCN focuses on local structural features centered around each point, MSCN extends this by capturing both <span style="text-decoration: underline;">local and global structural features</span>, leading to improved recognition performance and robustness to domain shifts.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            To evaluate the model’s recognition ability under simulation-to-real-world (Sim-to-Real) domain shifts, we developed a synthetic point cloud dataset. This dataset enabled rigorous testing of sim-to-real generalization, validating MSCN’s robustness in diverse deployment scenarios.
-          </li>
-          <li style="margin-bottom: 0.4rem;">
-            <strong>Impact:</strong> MSCN enables cost-effective deployment of AV systems by maintaining strong recognition performance across both varying LiDAR sensor configurations (e.g., low-cost vs. high-resolution sensors) and domain shifts between synthetic and real-world data, addressing key challenges in both sensor variability and data availability.
-          </li>
-        </ul>
-
-      </div>
-
-      <!-- Row 3: Impact (full width) -->
-      <div class="row mb-3">
-          <div class="links mt-2">
-            [<a href="https://arxiv.org/abs/2501.16289" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
-          </div>
-      </div>
-    </div>
-
-
-
-  </div>
-</section>
 
 
 
@@ -457,6 +243,220 @@
     </div>
   </div>
 </section>
+
+
+<section id="CV" class="recentpubs">
+  <div class="recentpubs-wrap">
+  </div>
+</section>
+
+<section id="recentpubs" class="recentpubs" >
+  <div class="recentpubs-wrap">
+    <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🚦 Computer Vision for ITS</p>
+    <h3 class="bibliography">[1] Pedestrian Crossing Direction Prediction at Intersections for Pedestrian Safety</h3>
+    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim*</em></strong></span>, Mohamed Abdel-Aty, Keechoo Choi, Zubayer Islam, Dongdong Wang, and Shaoyan Zhai</p>
+    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Accepted at IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS), 2025. [Impact Factor: 5.3, JCR Quartiles: Q1]</em></p>
+
+    <div class="row align-items-start">
+      
+      <!-- Left: Video -->
+      <div class="col-md-6">
+        <video width="100%" controls autoplay muted loop playsinline>
+          <source src="/assets/videos/OJ_ITS_Video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> With the rise of smart intersections, accurately predicting a pedestrian’s crossing direction at the intersection level is essential for enhancing pedestrian safety and optimizing traffic signal control. However, this task is challenging due to the diverse configurations of real-world intersections, each with different crosswalk orientations, geographic layouts, and CCTV placements and angles.</p>
+
+      </div>
+
+       <!-- Row 2: Methodology (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Methodology:</strong> To address this, we propose a geometric-invariant space embedding method. As illustrated in the video, our approach enables pedestrians captured at different intersections, with varying CCTV angles and crosswalk orientations, to be embedded into a unified spatial representation. This standardization allows robust learning of crossing behaviors. Furthermore, we adopt a Transformer-based encoder, achieving accuracy of 94.10% and an F1-score of 92.35%.</p>
+        </div>
+      </div>
+    
+      <!-- Row 3: Impact (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong> The proposed method demonstrates strong potential for real-world deployment. Its robustness to intersection variability makes it suitable for integration into city-wide intelligent traffic management systems to proactively ensure pedestrian safety at signalized intersections.</p>
+        
+          <div class="links mt-2">
+            [<a href="https://ieeexplore.ieee.org/document/11016106" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h3 class="bibliography">[2] CCTV-Drone Calibration for Surrogate Safety Measure of Vehicles at Smart Intersections</h3>
+    <!--<p><strong><em>On going project</em></strong>-->
+    <div class="row align-items-start">
+      
+      <!-- Drone_CCTV_Video.mp4 -->
+      <div class="col-md-6">
+        <video width="100%" controls autoplay muted loop playsinline>
+          <source src="/assets/videos/Drone_CCTV_Video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> In smart intersections, accurately assessing vehicle-to-vehicle safety is crucial. This requires estimating <em>safety surrogate measures</em> such as relative distance. However, limited CCTV viewpoints, typically front-facing, lack depth information, making it infeasible to compute inter-vehicle distances directly from monocular footage.</p>
+      </div>
+
+       <!-- Row 2: Methodology (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Methodology:</strong> We calibrate top-down drone views with CCTV footage to construct vehicle bounding boxes in both front and bottom perspectives. By calibrating vehicles captured in drone views with those in CCTV footage, we develop a cross-view dataset that includes bottom bounding boxes. A model is then trained to estimate the both bounding boxes from CCTV-only views, enabling accurate spatial localization without relying on drone footage. </p>
+        </div>
+      </div>
+    
+      <!-- Row 3: Impact (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong>  This work enables real-time vehicle safety monitoring using only existing CCTV infrastructure. By bridging the gap between aerial and CCTV footage, it allows accurate estimation of surrogate safety measures at intersections, contributing to proactive vehicle conflict detection and urban traffic safety management.</p>
+        
+        
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h3 class="bibliography">[3] Joint Trajectory Prediction of Vehicles and Pedestrians for Safety at Intersections</h3>
+    <p><strong><em> Project under the National Science Foundation(NSF) and Center for Smart Streetscapes (CS3)</em></strong>
+    <div class="row align-items-start">
+      
+      <!-- Drone_CCTV_Video.mp4 -->
+      <div class="col-md-6">
+        <video width="100%" controls autoplay muted loop playsinline>
+          <source src="/assets/videos/Trajectory_Video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> Vehicles and pedestrians continuously influence each other's movement, particularly through behaviors such as yielding or hesitation. Accurately predicting the future trajectories of both agents is essential to improve road users' safety at intersections. A joint understanding enables proactive conflict detection and enhances traffic safety. </p>
+
+         <p><strong>Methodology:</strong> We leverage a Graph Convolutional Network (GCN)-based framework to jointly encode the historical trajectories of vehicles and pedestrians into a shared latent feature space. The model captures mutual interactions between the two agent types and learns to predict their future trajectories concurrently.</p>
+      </div>
+
+      <!-- Row 3: Impact (full width) -->
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong> Our approach facilitates accurate multi-agent trajectory forecasting at intersections using observed movement patterns. By modeling pedestrian–vehicle interactions, it enhances the reliability of safety assessment and supports the development of smarter traffic control systems that account for both pedestrians and vehicles.</p>
+        
+        
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<section id="DL" class="recentpubs" style="background-color: #F4F3EA;">
+  <div class="recentpubs-wrap">
+  </div>
+</section>
+
+<section id="recentpubs" class="recentpubs" style="background-color: #F4F3EA;">
+  <div class="recentpubs-wrap">
+
+    <p style="font-weight: bold; color: #000; font-size: 1.6rem;"> 🚘 Novel Deep Learning Architectures for 3D LiDAR Recognition </p>
+    <h3 class="bibliography">[1] 3D Adaptive Structural Convolution Network for Domain-Invariant Point Cloud Recognition</h3>
+    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span> and Soomok Lee*</p>
+    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Accepted at Asian Conference on Computer Vision (ACCV), 2024. [BK21(Brain Korea) Distinguished Conference Paper List]</em></p>
+    
+    <div class="row align-items-start">
+
+      <div class="col-md-6">
+        <img src="/assets/img/ASCN.png" alt="ASCN Figure" style="width: 100%; height: auto;" />
+      </div>
+
+      <div class="col-md-6 text-start">
+        
+         <p><strong>Motivation:</strong> LiDAR is one of the crucial sensors for autonomous vehicles (AVs), offering accurate 3D spatial information essential for object recognition and safe navigation. However, the quality of LiDAR point clouds varies significantly with the number of channels (e.g., 32CH, 64CH, 128CH), and high-channel sensors are often too expensive for wide deployment. This creates a challenge, as deep learning models trained on high-resolution data often underperform when applied to lower-resolution inputs. Thus, it is critical to develop recognition models that are robust to LiDAR channel variations. </p>
+
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Methodology:</strong> We developed 3D-ASCN that recognizes objects using 3D point cloud data from LiDAR sensors. To address the challenges caused by variations in LiDAR sensor configurations, our model is designed to maintain reliable performance even when the quality or resolution of LiDAR data changes. Specifically, we introduce a distance-based kernel and a direction-based kernel that learn the structural feature representations of objects from point clouds. These kernels enable the model to focus on the intrinsic geometry of objects rather than the density of the point cloud itself, allowing for robust classification and object detection across different LiDAR resolutions.</p>
+        </div>
+      </div>
+    
+      <div class="row mb-3">
+        <div class="col">
+          <p><strong>Impact:</strong> The proposed 3D-ASCN can contribute to the real-world deployment of AVs by enabling reliable object recognition regardless of the LiDAR sensor used. By overcoming performance degradation caused by LiDAR channel shifts, our approach reduces hardware dependency and cost, allowing AV systems to be both scalable and economically feasible. </p>
+        
+          <div class="links mt-2">
+            [<a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Kim_3D_Adaptive_Structural_Convolution_Network_for_Domain-Invariant_Point_Cloud_Recognition_ACCV_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h3 class="bibliography">[2] Multi-view Structural Convolution Network for Domain-Invariant Point Cloud Recognition of Autonomous Vehicles</h3>
+    <p><span style="text-decoration: underline;"><strong><em>Younggun Kim</em></strong></span>, Mohamed Abdel-Aty, Beomsik Cho, Seonghoon Ryoo, and Soomok Lee*</p>
+    <p style="font-size: 1.1rem; font-weight: 500;">🎉 <em>Conditionally accepted at IEEE Transactions on Intelligent Vehicles (T-IV). [Impact Factor: 14.3, JCR Quartiles: Q1]</em></p>
+    <div class="row align-items-start">
+      
+      <!-- Left: Video -->
+      <div class="col-md-6">
+        <img src="/assets/img/MSCN.png" alt="MSCN Figure" style="width: 100%; height: auto;" />
+      </div>
+
+      <!-- Right: Description -->
+      <div class="col-md-6 text-start">
+        
+        <ul style="padding-left: 1.2em; margin-top: 0.4rem;">
+          <li style="margin-bottom: 0.4rem;">
+            We developed MSCN, an improved version of the previously proposed 3D-ASCN model, which robustly recognizes objects from point clouds under both LiDAR channel variations and domain shifts between simulation and real-world environments.
+          </li>
+          <li style="margin-bottom: 0.4rem;">
+            While 3D-ASCN focuses on local structural features centered around each point, MSCN extends this by capturing both <span style="text-decoration: underline;">local and global structural features</span>, leading to improved recognition performance and robustness to domain shifts.
+          </li>
+          <li style="margin-bottom: 0.4rem;">
+            To evaluate the model’s recognition ability under simulation-to-real-world (Sim-to-Real) domain shifts, we developed a synthetic point cloud dataset. This dataset enabled rigorous testing of sim-to-real generalization, validating MSCN’s robustness in diverse deployment scenarios.
+          </li>
+          <li style="margin-bottom: 0.4rem;">
+            <strong>Impact:</strong> MSCN enables cost-effective deployment of AV systems by maintaining strong recognition performance across both varying LiDAR sensor configurations (e.g., low-cost vs. high-resolution sensors) and domain shifts between synthetic and real-world data, addressing key challenges in both sensor variability and data availability.
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Row 3: Impact (full width) -->
+      <div class="row mb-3">
+          <div class="links mt-2">
+            [<a href="https://arxiv.org/abs/2501.16289" class="btn btn-sm z-depth-0" role="button">Learn More</a>]
+          </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+
+
+
 
 
 <section id="Robotics" class="recentpubs">
