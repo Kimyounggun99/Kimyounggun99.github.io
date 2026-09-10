@@ -47,7 +47,7 @@ hugoblox:
     language_switcher: false
     text: 'Contact: <a href="mailto:kyg9191@ucla.edu">kyg9191@ucla.edu</a>'
   copyright:
-    notice: © {year} Younggun Kim
+    notice: ''
   seo:
     title: ''
     location:
