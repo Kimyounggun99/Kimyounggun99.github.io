@@ -1,0 +1,94 @@
+name: Deploy website
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Initialize Hugo site
+        if: ${{ hashFiles('go.mod') == '' }}
+        run: |
+          git clone --quiet https://github.com/Kimyounggun99/younggun-academic-cv.git "$RUNNER_TEMP/academic"
+          git -C "$RUNNER_TEMP/academic" checkout --quiet c1851775630812217b3c23b944dd8af072858bb3
+          python3 - <<'PY'
+          from pathlib import Path
+          import os, subprocess, shutil
+          root = Path.cwd()
+          source = Path(os.environ['RUNNER_TEMP']) / 'academic'
+          for name in subprocess.check_output(['git','ls-files'], text=True).splitlines():
+              if not name.startswith('.github/'):
+                  (root / name).unlink()
+          for name in subprocess.check_output(['git','-C',str(source),'ls-files'], text=True).splitlines():
+              if name.startswith(('.github/','migration/','migration-source-')):
+                  continue
+              target = root / name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source / name, target)
+          p = root / 'config/_default/hugo.yaml'
+          p.write_text(p.read_text().replace('https://kimyounggun99.github.io/younggun-academic-cv/','https://kimyounggun99.github.io/'))
+          names = ['Demo_OD_with_Zoom.mp4','OJ_ITS_Video.mp4','Drone_CCTV_Video.mp4']
+          p = root / 'content/projects.md'
+          s = p.read_text()
+          for name in names:
+              data = subprocess.check_output(['git','show','114b30f902df82d8c8308c2959f728882bf474a2:assets/videos/' + name])
+              (root / 'static/assets/videos' / name).write_bytes(data)
+              s = s.replace('https://raw.githubusercontent.com/Kimyounggun99/kimyounggun99.github.io/114b30f902df82d8c8308c2959f728882bf474a2/assets/videos/' + name, 'assets/videos/' + name)
+          p.write_text(s)
+          p = root / 'config/_default/module.yaml'
+          s = p.read_text()
+          s = s.replace('  excludeFiles:' + chr(10),'')
+          for name in names:
+              s = s.replace('  - assets/videos/' + name + chr(10),'')
+          p.write_text(s)
+          p = root / '.gitignore'
+          s = p.read_text()
+          for name in names:
+              s = s.replace('static/assets/videos/' + name + chr(10),'')
+          s = s.replace('# Local original copies; the published page links to the pinned original files.' + chr(10),'')
+          p.write_text(s)
+          (root / 'README.md').write_text('')
+          PY
+          git config user.name 'Kimyounggun99'
+          git config user.email 'Kimyounggun99@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish completed Academic CV website'
+          git push origin HEAD:main
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.26.1"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: "10.14.0"
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.162.0"
+          extended: true
+      - run: pnpm install --frozen-lockfile
+      - run: hugo --minify
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
