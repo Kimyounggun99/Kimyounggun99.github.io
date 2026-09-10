@@ -1,0 +1,7 @@
+# Preserve the archived source assets byte-for-byte on every operating system.
+static/assets/** -text
+migration-source-*.html -text
+*.jpg binary
+*.png binary
+*.mp4 binary
+*.pdf binary

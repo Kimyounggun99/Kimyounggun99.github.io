@@ -1,0 +1,32 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Younggun Kim
+  given: Younggun
+  family: Kim
+role: Ph.D. Student
+bio: "<div class=\"description\">\n<p> Hi, thank you for visiting my profile. I am a Ph.D. student at the University\
+  \ of California, Los Angeles (UCLA), advised by <a href=\"https://sites.google.com/cornell.edu/youngseokim\" style=\"\
+  font-weight: bold;\" target=\"_blank\">Prof. Youngseo Kim</a>  . I received my M.S. in Civil Engineering from\
+  \ the University of Central Florida in the United States, under the guidance of <a href=\"https://scholar.google.com/citations?user=Cp4F4JkAAAAJ&amp;hl=en\"\
+  \ style=\"font-weight: bold;\" target=\"_blank\">Prof. Mohamed Abdel-Aty</a> and my B.S. in Mechanical Engineering\
+  \ from Ajou University in South Korea. \n              <br/><br/>\n              With core abilities in deep learning\
+  \ and computer vision, I have developed cutting-edge frameworks for real-world applications including intelligent\
+  \ transportation systems and autonomous vehicles.\n              <br/><br/>\n</p></div>"
+affiliations:
+- name: University of California, Los Angeles (UCLA)
+  url: https://www.ucla.edu/
+links:
+- icon: at-symbol
+  url: mailto:kyg9191@ucla.edu
+  label: Email
+- icon: academicons/google-scholar
+  url: https://scholar.google.com/citations?user=7wFDu0oAAAAJ&hl=en
+  label: Google Scholar
+- icon: brands/github
+  url: https://github.com/Kimyounggun99
+  label: GitHub
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/younggun-kim-a14751311/
+  label: LinkedIn

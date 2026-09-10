@@ -1,0 +1,13 @@
+main:
+- name: Home
+  url: /
+  weight: 10
+- name: Publications
+  url: publications.html
+  weight: 20
+- name: Hands-on Experience
+  url: projects.html
+  weight: 30
+- name: CV
+  url: assets/files/YounggunKim_CV_latest_.pdf
+  weight: 40

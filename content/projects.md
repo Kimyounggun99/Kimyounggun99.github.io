@@ -1,0 +1,395 @@
+---
+title: Hands-on Experience
+type: landing
+sections:
+- block: markdown
+  content:
+    text: |-
+      <div class="migrated-content">
+      <h1 class="page-title">Hands-on Experience</h1>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: MLLM
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="MLLM">
+      <div class="recentpubs-wrap">
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: projects-1
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="recentpubs">
+      <div class="recentpubs-wrap">
+      <h2 class="section-title"> 🧠 Multimodal Large Language Models for Visual Understanding and Safety</h2>
+      <h3 class="bibliography">[1] AVA-VLM: Adaptive Visual Attention-Vision Language Model for In-the-Wild Construction Site Monitoring</h3>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span>, Taeheon Kim, Youngseo Kim, and Seunghee Park* <p>
+      <em>Under review at Developments in the Built Environment. [Impact Factor: 8.7, JCR Quartiles: Q1] </em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/Demo_OD_with_Zoom.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> Existing construction-site Vision-Language Models (VLMs) commonly rely on direct question-answering from a single global image. However, this paradigm remains limited for in-the-wild construction-site monitoring. First, the operational range is restricted because small or distant workers, and hazardous objects are often difficult to recognize from wide-view images. Second, model reliability can degrade when input images are downsampled due to edge-device constraints. Third, processing full-resolution images with dense visual tokens leads to inefficient inference, even when only a small region is relevant to the query. </p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Methodology:</strong> We developed AVA-VLM, an Adaptive Visual Attention-Vision Language Model inspired by the human visual attention mechanism. Similar to how a human inspector first scans the overall scene and then zooms in on important but hard-to-see areas, AVA-VLM first reasons over a low-resolution global image to understand the scene context. When the relevant evidence is sufficiently visible, the model directly answers from the global view. When detailed inspection is needed, it adaptively requests a high-resolution crop of the query-relevant region and incorporates the cropped visual evidence into a multi-turn Chain-of-Thought reasoning process.</p>
+      <p>
+      <strong>Impact:</strong> AVA-VLM provides three key benefits for practical construction-site monitoring. First, it extends the operational range of construction-site VLMs by enabling fine-grained reasoning over small or distant objects. Second, it improves reliability under reduced-resolution inputs by combining low-resolution global reasoning with selective high-resolution local inspection. Third, it improves inference efficiency by reducing unnecessary visual-token processing and allocating high-resolution processing only to regions that are relevant to the query.</p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://arxiv.org/abs/2607.05859" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[2] VRU-Accident: A Vision-Language Benchmark for Video Question Answering and Dense Captioning for Accident Scene Understanding</h3>
+      <p>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span>, Ahmed Abdelrahman*, and Mohamed Abdel-Aty</p>
+      <p>🎉 <em>Accepted at IEEE/CVF International Conference on Computer Vision Workshop (ICCVW), 2025. [Oral, Best Student Paper Award]</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/VRU_Accident_Video.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> Vulnerable Road Users (VRUs), such as pedestrians and cyclists, are disproportionately affected in traffic accidents. Understanding the causes, contexts, and preventability of such accidents is crucial for improving road safety. Multimodal Large Language Models (MLLMs) have emerged as powerful tools for scene understanding and can support applications like accident report summarization and autonomous vehicle (AV) decision-making. However, their real-world utility remains limited due to a lack of high-quality, safety-focused benchmarks that test fine-grained reasoning and description capabilities in accident scenarios. </p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Benchmark Statistics:</strong> The VRU-Accident benchmark consists of <strong>1K</strong> real-world dashcam accident videos involving VRUs. It features <strong>6K</strong> multiple-choice video question answering (VQA) questions covering six categories: weather &amp; lighting, traffic environment, road configuration, accident type, accident cause, and prevention measure. Each question comes with four answer choices, one correct and three counterfactual distractors, resulting in <strong>24K</strong> candidate options, including <strong>3.4K</strong> unique answers to encourage diverse and nuanced reasoning. The benchmark also provides <strong>1K</strong> densely annotated scene-level captions that narrate the spatiotemporal dynamics of accident scenarios.</p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> VRU-Accident serves as the first large-scale benchmark to systematically evaluate MLLMs' understanding of VRU-related accident scenes through both VQA and dense captioning tasks. By providing diverse and semantically rich annotations grounded in real-world scenarios, the benchmark enables quantitative evaluation of MLLMs' reasoning, grounding, and narrative capabilities in high-risk traffic contexts. It lays the foundation for developing safer and more interpretable AI systems for AVs and transportation safety research. </p>
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://vru-accident.github.io/" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[3] Safe-LLaVA: A Privacy-Preserving Vision-Language Dataset and Benchmark for Biometric Safety</h3>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span>, Swetha Sirnam, Fazil Kagdi, and Mubarak Shah <p>🎉 <em>Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings (CVPR Findings), 2026.</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <img alt="Safe_LLaVA Figure" class="migration-media" loading="lazy" src="assets/img/Safe_LLaVA.png"/>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> MLLMs have shown impressive capabilities across various domains. However, they pose serious privacy risks due to their tendency to leak biometric information such as race, gender, and age from visual data. Despite existing regulations like GDPR and SPCD, MLLMs often violate privacy constraints, which is particularly problematic in high-stakes applications such as government projects. This issue stems primarily from the leakage of biometric attributes in the training datasets used to build these models. </p>
+      <p>
+      <strong>Methodology:</strong> We developed a novel pipeline to clean biometric information from open datasets used to train MLLMs. This process ensures that explicit biometric attributes are removed while preserving semantic richness. We also introduce a benchmark to evaluate both explicit leakage (where models are directly asked about biometric details) and implicit leakage (where personal information is inferred from open-ended questions). As illustrated in the figure, LLaVA-v1.5 trained on existing datasets reveals both types of leakage, whereas Safe-LLaVA refuses to answer biometric questions while maintaining rich, non-biometric descriptions in open-ended prompts.</p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> Safe-LLaVA offers the first comprehensive solution for training and evaluating privacy-aware MLLMs. It enables researchers and practitioners to develop models that are both biometrically safe and informative, which is critical for real-world deployment in domains requiring strict privacy compliance. By preventing both explicit and implicit biometric inference, Safe-LLaVA represents a key step toward building responsible and ethically aligned multimodal AI systems.</p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://openaccess.thecvf.com/content/CVPR2026F/html/Kim_Safe-LLaVA_A_Privacy-Preserving_Vision_Language_Dataset_and_Benchmark_for_Biometric_CVPRF_2026_paper.html" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: CV
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="CV">
+      <div class="recentpubs-wrap">
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: projects-3
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="recentpubs">
+      <div class="recentpubs-wrap">
+      <h2 class="section-title"> 🚦 Computer Vision for ITS</h2>
+      <h3 class="bibliography">[1] Pedestrian Crossing Direction Prediction at Intersections for Pedestrian Safety</h3>
+      <p>
+      <span>
+      <strong>
+      <em>Younggun Kim*</em>
+      </strong>
+      </span>, Mohamed Abdel-Aty, Keechoo Choi, Zubayer Islam, Dongdong Wang, and Shaoyan Zhai</p>
+      <p>🎉 <em>Accepted at IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS), 2025. [Impact Factor: 5.3, JCR Quartiles: Q1]</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/OJ_ITS_Video.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> With the rise of smart intersections, accurately predicting a pedestrian’s crossing direction at the intersection level is essential for enhancing pedestrian safety and optimizing traffic signal control. However, this task is challenging due to the diverse configurations of real-world intersections, each with different crosswalk orientations, geographic layouts, and CCTV placements and angles.</p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Methodology:</strong> To address this, we propose a geometric-invariant space embedding method. As illustrated in the video, our approach enables pedestrians captured at different intersections, with varying CCTV angles and crosswalk orientations, to be embedded into a unified spatial representation. This standardization allows robust learning of crossing behaviors. Furthermore, we adopt a Transformer-based encoder, achieving accuracy of 94.10% and an F1-score of 92.35%.</p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> The proposed method demonstrates strong potential for real-world deployment. Its robustness to intersection variability makes it suitable for integration into city-wide intelligent traffic management systems to proactively ensure pedestrian safety at signalized intersections.</p>
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://ieeexplore.ieee.org/document/11016106" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[2] CCTV-Drone Calibration for Surrogate Safety Measure of Vehicles at Smart Intersections</h3>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/Drone_CCTV_Video.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> In smart intersections, accurately assessing vehicle-to-vehicle safety is crucial. This requires estimating <em>safety surrogate measures</em> such as relative distance. However, limited CCTV viewpoints, typically front-facing, lack depth information, making it infeasible to compute inter-vehicle distances directly from monocular footage.</p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Methodology:</strong> We calibrate top-down drone views with CCTV footage to construct vehicle bounding boxes in both front and bottom perspectives. By calibrating vehicles captured in drone views with those in CCTV footage, we develop a cross-view dataset that includes bottom bounding boxes. A model is then trained to estimate the both bounding boxes from CCTV-only views, enabling accurate spatial localization without relying on drone footage. </p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> This work enables real-time vehicle safety monitoring using only existing CCTV infrastructure. By bridging the gap between aerial and CCTV footage, it allows accurate estimation of surrogate safety measures at intersections, contributing to proactive vehicle conflict detection and urban traffic safety management.</p>
+      </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[3] Joint Trajectory Prediction of Vehicles and Pedestrians for Safety at Intersections</h3>
+      <p>
+      <strong>
+      <em> Project under the National Science Foundation(NSF) and Center for Smart Streetscapes (CS3)</em>
+      </strong>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/Trajectory_Video.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> Vehicles and pedestrians continuously influence each other's movement, particularly through behaviors such as yielding or hesitation. Accurately predicting the future trajectories of both agents is essential to improve road users' safety at intersections. A joint understanding enables proactive conflict detection and enhances traffic safety. </p>
+      <p>
+      <strong>Methodology:</strong> We leverage a Graph Convolutional Network (GCN)-based framework to jointly encode the historical trajectories of vehicles and pedestrians into a shared latent feature space. The model captures mutual interactions between the two agent types and learns to predict their future trajectories concurrently.</p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> Our approach facilitates accurate multi-agent trajectory forecasting at intersections using observed movement patterns. By modeling pedestrian–vehicle interactions, it enhances the reliability of safety assessment and supports the development of smarter traffic control systems that account for both pedestrians and vehicles.</p>
+      </div>
+      </div>
+      </div>
+      </p>
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: DL
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="DL">
+      <div class="recentpubs-wrap">
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: projects-5
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="recentpubs">
+      <div class="recentpubs-wrap">
+      <h2 class="section-title"> 🚘 Novel Deep Learning Architectures for 3D LiDAR Recognition </h2>
+      <h3 class="bibliography">[1] 3D Adaptive Structural Convolution Network for Domain-Invariant Point Cloud Recognition</h3>
+      <p>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span> and Soomok Lee*</p>
+      <p>🎉 <em>Accepted at Asian Conference on Computer Vision (ACCV), 2024. [BK21(Brain Korea) Distinguished Conference Paper List]</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <img alt="ASCN Figure" class="migration-media" loading="lazy" src="assets/img/ASCN.png"/>
+      </div>
+      <div class="col-md-6 text-start">
+      <p>
+      <strong>Motivation:</strong> LiDAR is one of the crucial sensors for autonomous vehicles (AVs), offering accurate 3D spatial information essential for object recognition and safe navigation. However, the quality of LiDAR point clouds varies significantly with the number of channels (e.g., 32CH, 64CH, 128CH), and high-channel sensors are often too expensive for wide deployment. This creates a challenge, as deep learning models trained on high-resolution data often underperform when applied to lower-resolution inputs. Thus, it is critical to develop recognition models that are robust to LiDAR channel variations. </p>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Methodology:</strong> We developed 3D-ASCN that recognizes objects using 3D point cloud data from LiDAR sensors. To address the challenges caused by variations in LiDAR sensor configurations, our model is designed to maintain reliable performance even when the quality or resolution of LiDAR data changes. Specifically, we introduce a distance-based kernel and a direction-based kernel that learn the structural feature representations of objects from point clouds. These kernels enable the model to focus on the intrinsic geometry of objects rather than the density of the point cloud itself, allowing for robust classification and object detection across different LiDAR resolutions.</p>
+      </div>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Impact:</strong> The proposed 3D-ASCN can contribute to the real-world deployment of AVs by enabling reliable object recognition regardless of the LiDAR sensor used. By overcoming performance degradation caused by LiDAR channel shifts, our approach reduces hardware dependency and cost, allowing AV systems to be both scalable and economically feasible. </p>
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Kim_3D_Adaptive_Structural_Convolution_Network_for_Domain-Invariant_Point_Cloud_Recognition_ACCV_2024_paper.pdf" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[2] Multi-view Structural Convolution Network for Domain-Invariant Point Cloud Recognition of Autonomous Vehicles</h3>
+      <p>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span>, Mohamed Abdel-Aty, Beomsik Cho, Seonghoon Ryoo, and Soomok Lee*</p>
+      <p>🎉 <em>Conditionally accepted at IEEE Transactions on Intelligent Vehicles (T-IV). [Impact Factor: 14.3, JCR Quartiles: Q1]</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <img alt="MSCN Figure" class="migration-media" loading="lazy" src="assets/img/MSCN.png"/>
+      </div>
+      <div class="col-md-6 text-start">
+      <ul>
+      <li> We developed MSCN, an improved version of the previously proposed 3D-ASCN model, which robustly recognizes objects from point clouds under both LiDAR channel variations and domain shifts between simulation and real-world environments. </li>
+      <li> While 3D-ASCN focuses on local structural features centered around each point, MSCN extends this by capturing both <span>local and global structural features</span>, leading to improved recognition performance and robustness to domain shifts. </li>
+      <li> To evaluate the model’s recognition ability under simulation-to-real-world (Sim-to-Real) domain shifts, we developed a synthetic point cloud dataset. This dataset enabled rigorous testing of sim-to-real generalization, validating MSCN’s robustness in diverse deployment scenarios. </li>
+      <li>
+      <strong>Impact:</strong> MSCN enables cost-effective deployment of AV systems by maintaining strong recognition performance across both varying LiDAR sensor configurations (e.g., low-cost vs. high-resolution sensors) and domain shifts between synthetic and real-world data, addressing key challenges in both sensor variability and data availability. </li>
+      </ul>
+      </div>
+      <div class="row mb-3">
+      <div class="links mt-2"> [<a class="btn btn-sm z-depth-0" href="https://arxiv.org/abs/2501.16289" role="button">Learn More</a>] </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: Robotics
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="Robotics">
+      <div class="recentpubs-wrap">
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+- block: markdown
+  id: projects-7
+  content:
+    text: |-
+      <div class="migrated-content">
+      <section class="recentpubs" id="recentpubs">
+      <div class="recentpubs-wrap">
+      <h2 class="section-title"> 🤖 Robotics Experience </h2>
+      <h3 class="bibliography">[1] Design of a Robotic Gripper capable of Grasping and Manipulating Various Objects</h3>
+      <p>
+      <span>
+      <strong>
+      <em>Younggun Kim</em>
+      </strong>
+      </span>, Yooseong Lee, and Uikyum Kim*</p>
+      <p>🎉 <em>Best Paper Award at the 17th Korean Robotics Society Annual Conference (KROS)</em>
+      </p>
+      <div class="row align-items-start">
+      <div class="col-md-6">
+      <a href="https://press.ajou.ac.kr/news/articleView.html?idxno=2901" rel="noopener noreferrer" target="_blank">
+      <img alt="News" class="migration-media" loading="lazy" src="assets/img/News.png"/>
+      </a>
+      </div>
+      <div class="col-md-6">
+      <a href="https://press.ajou.ac.kr/news/articleView.html?idxno=2901" rel="noopener noreferrer" target="_blank">
+      <img alt="KROS" class="migration-media" loading="lazy" src="assets/img/KROS.png"/>
+      </a>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Motivation:</strong> Robotic grippers are widely used in industrial and research settings for object grasping. Conventional soft grippers such as the Fin Ray Effect (FRE) grippers can achieve stable adaptive grasping without complex control, but they have limitations in manipulating the pose or orientation of grasped objects. </p>
+      <p>
+      <strong>Methodology:</strong> To address the limitations of soft grippers, we designed a novel gripper mechanism by adding an additional degree of freedom (DOF) to a standard FRE-inspired structure, enabling controlled deformation for manipulation tasks. We performed mathematical modeling and parametric analysis to determine the optimal force application points and directions for effective object manipulation. Then, we conducted Finite Element Analysis (FEA) simulations to validate deformation behavior under different load conditions.</p>
+      <p>
+      <strong>Impact:</strong> The proposed gripper design enables simultaneous stable grasping and in-hand manipulation, overcoming the main limitations of conventional adaptive grippers. The gripper also provide a foundation for further development of adaptive robotic end-effectors capable of handling complex manipulation tasks in real-world environments. </p>
+      </div>
+      </div>
+      </div>
+      <h3 class="bibliography">[2] Implementation of a Well-known Robotic Gripper and Development of a Real-time Status Tracking System</h3>
+      <p>
+      <strong>
+      <em>Capston project</em>
+      </strong>
+      <div class="row align-items-start">
+      <div class="container">
+      <video class="migration-media" controls="" loop="" muted="" playsinline="" preload="metadata">
+      <source src="assets/videos/Capstone.mp4" type="video/mp4"/> Your browser does not support the video tag. </video>
+      </div>
+      <div class="row mb-3">
+      <div class="col">
+      <p>
+      <strong>Overview:</strong> This project was carried out as part of my undergraduate capstone experience, with the goal of integrating the fundamental principles of mechanical engineering, including kinematics, dynamics, and motor design, into a comprehensive robotic system. I was particularly inspired by the Omega Gripper, published in IEEE/ASME Transactions on Mechatronics, which was specifically designed to grasp challenging objects such as thin cards. Recognizing this as an excellent example of how core engineering knowledge could be combined into a solution, I adopted the Omega Gripper as the foundation of my work. To deepen my understanding, I visited the POSTECH March Lab and consulted directly with the first author of the original paper, which helped resolve technical questions and further motivated me to pursue this project. </p>
+      <p>
+      <strong>Gripper Kinematic Design:</strong> The gripper mechanism features an underactuated structure implemented using a parallel four-bar mechanism. I derived and analyzed both the closed-loop forward and inverse kinematic equations to model the motion mathematically and ensure precise control over the gripper’s configuration during operation. </p>
+      <p>
+      <strong>Kinematic Simulation:</strong> Using MATLAB, I simulated the kinematics of the mechanism to optimize key parameters such as link lengths and ranges of motion, ensuring that the gripper could reliably adapt to a variety of object shapes and sizes. </p>
+      <p>
+      <strong>Dynamic Simulation and Prototyping:</strong> Dynamic simulations were conducted to estimate the loads applied during grasping and to select appropriate material properties for the gripper body. Based on these analyses, I designed the gripper structure and fabricated the components via 3D printing. I also selected motors considering factors such as required grasping force and system responsiveness. </p>
+      <p>
+      <strong>Demonstration and Real-time Tracking:</strong> For demonstration, I integrated an encoder at the lower part of the gripper and an IMU sensor at the center. The gripper was operated based on the inverse kinematic equations to achieve adaptive grasping of objects. Real-time tracking and visualization of the gripper’s state were performed using forward kinematics, allowing continuous monitoring of its configuration during operation. </p>
+      </div>
+      </div>
+      </div>
+      </p>
+      </div>
+      </section>
+      </div>
+  design:
+    columns: '1'
+url: /projects.html
+---

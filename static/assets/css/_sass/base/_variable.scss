@@ -1,0 +1,33 @@
+$theme-color : #0f555c;
+$theme-bright : #ffffff;
+$theme-dark : #0f555c;
+$theme-dark2 : #1f5158;
+$theme-em-color: rgb(255, 102, 0);
+$text : rgba(0,0,0,0.8);
+$text-gray : rgba(0,0,0,0.54);
+$divider-color : #e7e9ee;
+$background-gray : rgba(0,0,0,0.05);
+
+%page-padding {
+    padding : 0px 20%!important;
+    @media (max-width: 991px) {
+        padding: 0px 10%!important;
+    }
+    @media (max-width: 576px) {
+        padding: 0px 15px!important;
+    }
+}
+%posts-padding {
+    @media (max-width: 991px) {
+        padding: 0px 10%!important;
+    }
+    @media (max-width: 576px) {
+        padding: 0px!important;
+    }
+}
+%page-nav-btn {
+    right : 5%;
+    @media (max-width: 991px) {
+        right : 3%;
+    }
+}
